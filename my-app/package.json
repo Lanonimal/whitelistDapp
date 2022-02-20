@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "devv": "node_modules/.bin/next"
+    "devv": "node_modules/.bin/next",
+    "buildd": "node_modules/.bin/next build"
   },
   "dependencies": {
     "ethers": "^5.5.4",

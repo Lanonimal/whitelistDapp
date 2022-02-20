@@ -124,7 +124,7 @@ return (
     <div className={styles.main}>
       <div>
         <h1 className={styles.title}>Welcome to Profit Unity!</h1>
-        <div className={styles.description}>We're a DAO that operates within the Crypto ecosystem.</div>
+        <div className={styles.description}>We are a DAO that operates within the Crypto ecosystem.</div>
         <div className={styles.description}>{numberOfWhitelisted} users have already joined the Whitelist.</div>
         {renderButton()}
       </div>

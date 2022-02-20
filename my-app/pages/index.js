@@ -114,6 +114,16 @@ useEffect(() => {
   }
 }, [walletConnected]);
 
+const renderDescription = () => {
+  if (numberOfWhitelisted == 0){
+    return (<div className={styles.description}>No users have currently joined the Whitelist.</div>)
+  } else if (numberOfWhitelisted == 1){
+    return (<div className={styles.description}>1 user has already joined the Whitelist.</div>)
+  } else {
+    return (<div className={styles.description}>{numberOfWhitelisted} users have already joined the Whitelist.</div>)
+  }
+}
+
 return (
   <div>
     <Head>
@@ -125,7 +135,7 @@ return (
       <div>
         <h1 className={styles.title}>Welcome to Profit Unity!</h1>
         <div className={styles.description}>We are a DAO that operates within the Crypto ecosystem.</div>
-        <div className={styles.description}>{numberOfWhitelisted} users have already joined the Whitelist.</div>
+        {renderDescription()}
         {renderButton()}
       </div>
       <div>
